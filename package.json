@@ -9,6 +9,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:backend": "node server.js",
+    "start:frontend": "react-scripts start",
+    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "build:frontend": "react-scripts build",
     "build:backend": "echo 'No build step for backend'",
     "build:full": "npm run build:frontend && npm run build:backend"
@@ -24,6 +26,9 @@
     "nodemailer": "^6.10.0",
     "nodemailer-brevo-transport": "^2.1.0",
     "nodeman": "^1.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
   },
   "proxy": "http://localhost:5000"
 }
