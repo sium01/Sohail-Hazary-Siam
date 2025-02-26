@@ -7,7 +7,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:backend": "node server.js",
+    "build:frontend": "react-scripts build",
+    "build:backend": "echo 'No build step for backend'",
+    "build:full": "npm run build:frontend && npm run build:backend"
   },
   "author": "sium01",
   "license": "ISC",
